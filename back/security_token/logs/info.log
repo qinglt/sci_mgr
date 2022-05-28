@@ -1,0 +1,49 @@
+2022-05-25 13:46:39.209 INFO  17628 --- [restartedMain] com.qing.SecurityTokenApplication - Starting SecurityTokenApplication on ZQNS with PID 17628 (D:\Idea专业版\Dm\security_token\target\classes started by 竹秋廿四 in D:\Idea专业版\Dm\security_token)
+2022-05-25 13:46:39.214 INFO  17628 --- [restartedMain] com.qing.SecurityTokenApplication - The following profiles are active: dev
+2022-05-25 13:46:39.262 INFO  17628 --- [restartedMain] o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-25 13:46:39.262 INFO  17628 --- [restartedMain] o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-25 13:46:39.971 INFO  17628 --- [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-25 13:46:39.973 INFO  17628 --- [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-25 13:46:40.002 INFO  17628 --- [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2022-05-25 13:46:40.537 INFO  17628 --- [restartedMain] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-05-25 13:46:40.547 INFO  17628 --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-25 13:46:40.547 INFO  17628 --- [restartedMain] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-25 13:46:40.547 INFO  17628 --- [restartedMain] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-25 13:46:40.647 INFO  17628 --- [restartedMain] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-25 13:46:40.647 INFO  17628 --- [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1384 ms
+2022-05-25 13:46:41.120 INFO  17628 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-05-25 13:46:42.638 INFO  17628 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-05-25 13:46:43.887 INFO  17628 --- [restartedMain] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-25 13:46:44.156 INFO  17628 --- [restartedMain] com.qing.config.security.MySecurityConfig - ====================security:true====================
+2022-05-25 13:46:44.170 INFO  17628 --- [restartedMain] o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/verifyCode/**'], []
+2022-05-25 13:46:44.209 INFO  17628 --- [restartedMain] o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ebfba57, org.springframework.security.web.context.SecurityContextPersistenceFilter@1892a2b3, org.springframework.security.web.header.HeaderWriterFilter@61b2986, org.springframework.web.filter.CorsFilter@1fd79ec7, org.springframework.security.web.authentication.logout.LogoutFilter@2345f315, com.qing.config.security.filter.TokenFilter@64a3de3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7d5d948b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6725b7be, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a12ccea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e8dc08f, org.springframework.security.web.session.SessionManagementFilter@32f63082, org.springframework.security.web.access.ExceptionTranslationFilter@430973e1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6aca5abe]
+2022-05-25 13:46:44.237 INFO  17628 --- [restartedMain] o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-05-25 13:46:44.281 INFO  17628 --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-05-25 13:46:44.297 INFO  17628 --- [restartedMain] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-25 13:46:44.304 INFO  17628 --- [restartedMain] com.qing.SecurityTokenApplication - Started SecurityTokenApplication in 5.75 seconds (JVM running for 7.243)
+2022-05-25 13:47:06.638 INFO  17500 --- [restartedMain] com.qing.SecurityTokenApplication - Starting SecurityTokenApplication on ZQNS with PID 17500 (D:\Idea专业版\Dm\security_token\target\classes started by 竹秋廿四 in D:\Idea专业版\Dm\security_token)
+2022-05-25 13:47:06.640 INFO  17500 --- [restartedMain] com.qing.SecurityTokenApplication - The following profiles are active: dev
+2022-05-25 13:47:06.673 INFO  17500 --- [restartedMain] o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-25 13:47:06.673 INFO  17500 --- [restartedMain] o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-25 13:47:07.154 INFO  17500 --- [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-25 13:47:07.155 INFO  17500 --- [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-25 13:47:07.177 INFO  17500 --- [restartedMain] o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2022-05-25 13:47:07.571 INFO  17500 --- [restartedMain] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2022-05-25 13:47:07.577 INFO  17500 --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2022-05-25 13:47:07.577 INFO  17500 --- [restartedMain] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-25 13:47:07.577 INFO  17500 --- [restartedMain] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-25 13:47:07.647 INFO  17500 --- [restartedMain] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-25 13:47:07.647 INFO  17500 --- [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 974 ms
+2022-05-25 13:47:08.005 INFO  17500 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-05-25 13:47:09.013 INFO  17500 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-05-25 13:47:10.144 INFO  17500 --- [restartedMain] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-25 13:47:10.358 INFO  17500 --- [restartedMain] com.qing.config.security.MySecurityConfig - ====================security:true====================
+2022-05-25 13:47:10.367 INFO  17500 --- [restartedMain] o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/verifyCode/**'], []
+2022-05-25 13:47:10.385 INFO  17500 --- [restartedMain] o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49df1684, org.springframework.security.web.context.SecurityContextPersistenceFilter@32f63082, org.springframework.security.web.header.HeaderWriterFilter@430973e1, org.springframework.web.filter.CorsFilter@1a086f68, org.springframework.security.web.authentication.logout.LogoutFilter@3cb92796, com.qing.config.security.filter.TokenFilter@28f455ee, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@78657c33, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1892a2b3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51d2a3ca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ebfba57, org.springframework.security.web.session.SessionManagementFilter@61b2986, org.springframework.security.web.access.ExceptionTranslationFilter@4874e86e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3897714a]
+2022-05-25 13:47:10.414 INFO  17500 --- [restartedMain] o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-05-25 13:47:10.448 INFO  17500 --- [restartedMain] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2022-05-25 13:47:10.472 INFO  17500 --- [restartedMain] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2022-05-25 13:47:10.481 INFO  17500 --- [restartedMain] com.qing.SecurityTokenApplication - Started SecurityTokenApplication in 4.31 seconds (JVM running for 5.733)
+2022-05-25 13:47:25.620 INFO  17500 --- [http-nio-8082-exec-3] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-25 13:47:25.620 INFO  17500 --- [http-nio-8082-exec-3] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-25 13:47:25.627 INFO  17500 --- [http-nio-8082-exec-3] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms

@@ -1,0 +1,125 @@
+server:
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+      additional-paths: src/main/java #重启目录
+      exclude: WEB-INF/**
+  port: 8082
+  servlet:
+    encoding:
+      charset: utf-8
+    #  设置port后面跟的地址——> 127.0.0.1:8080/test/
+    context-path:
+
+spring:
+  application:
+    name: Springboot_SpringSecurity_Vue
+  profiles:
+    active: dev
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/security_study?characterEncoding=utf-8&useSSL=true&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: 123456
+    druid:
+      # 初始化,最小,最大连接数
+      initial-size: 8
+      #获取数据库连接等待的超时时间
+      min-idle: 5
+      max-active: 20
+      max-wait: 60000
+      #配置多久进行一次检测，检测需要关闭的空闲连接 单位毫秒
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 1 FROM DUAL
+      test-while-idle: true
+      test-on-borrow: false
+      pool-prepared-statements: true
+      #配置监控统计拦截的filters，去掉后,监控界面的sql无法统计
+      filters: stat
+      max-pool-prepared-statement-per-connection-size: 20
+      use-global-data-source-stat: true
+      connect-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+      stat-view-servlet:
+        enabled: true
+        login-username: admin
+        login-password: 123456
+        reset-enable: true
+        url-pattern: /druid/*
+        allow:
+        #deny优先级高于allow
+        deny:
+      web-stat-filter:
+        enabled: true
+        exclusions: /druid/*,*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico
+        url-pattern: /*
+
+  # redis连接设置
+  redis:
+    #    Redis数据库索引（默认为0）
+    database: 1
+    #    Redis服务器地址
+    host: 127.0.0.1
+    #    Redis服务器端口
+    port: 6379
+    #    Redis连接密码(默认为空)
+    password:
+    #    Redis连接超时时间(毫秒)
+    timeout: 0
+
+  servlet:
+    multipart:
+      #      文件上传的最大值
+      max-file-size: 50MB
+      #      request数据的最大值
+      max-request-size: 50MB
+
+### mybatis-plus配置
+mybatis-plus:
+  # mapper.xml路径
+  mapper-locations: classpath*:/mybatis/mapper/**/*.xml
+  #  MyBatis 配置文件位置
+  #  config-location: classpath*:mybatis/mybatis-config.xml
+  global-config:
+    #    数据库相关配置
+    db-config:
+      #      主键类型 AUTO：数据库ID自增，INPUT：用户输入ID，ID_WORKER：全局唯一ID（数字类型唯一ID），UUID：全局唯一ID UUID
+      #自动递增全局主键策略
+      id-type: AUTO
+
+      #NOT_NULL:默认，当实体类字段为null时，不引入到where
+      #IGNORED:当实体类字段为null时，仍然引入到where，即where field=null
+      #NOT_EMPTY：当实体类字段为null或为空串时，不引入到where
+      insert-strategy: NOT_EMPTY
+      update-strategy: NOT_EMPTY
+      select-strategy: NOT_EMPTY
+
+      #表前缀+实体类名(驼峰转下划线) = 要操作的表
+      #      table-prefix: t_
+
+      logic-delete-field: deleted  #全局逻辑删除字段值 3.3.0开始支持，详情看下面。
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+
+  configuration:
+    # 是否开启自动驼峰命名规则映射:从数据库列名到Java属性驼峰命名的类似映射
+    map-underscore-to-camel-case: true
+    # 如果查询结果中包含空值的列，则 MyBatis 在映射的时候，不会映射这个字段
+    #        call-setters-on-nulls: true
+    # 这个配置会将执行的sql打印出来，在开发或测试的时候可以用
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# 文件上传下载路径设置
+file:
+  # 静态资源对外暴露的访问路径
+  staticAccessPath: /download
+  # 文件上传目录
+  uploadFolder: D:/Idea专业版/Dm/springboot_helloworld/data/
+
+# jwt_token设置
+jwt:
+  expiration: 43200000
+  secret: 374d96132e47da0e
+  tokenKey: Authorization
+  tokenHead: Bearer

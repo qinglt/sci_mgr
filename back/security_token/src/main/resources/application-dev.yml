@@ -1,0 +1,4 @@
+# 是否开启security
+security:
+  enable: true
+
